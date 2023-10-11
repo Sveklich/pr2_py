@@ -332,7 +332,7 @@ def setup_game():
     else:
         feeling_string = "Я не знаю, каково это - чувствовать себя"
 
-    question3 = "Что ж, тогда, " + player1.name + ", " + feeling_string + " " + player1.feeling + ".\n"
+    question3 = f"Что ж, тогда {player1.name}, {feeling_string} {player1.feeling}.\n"
     for character in question3:
         sys.stdout.write(character)
         sys.stdout.flush()
@@ -368,8 +368,8 @@ def setup_game():
         astrological = input("> ")
     player1.astrological = astrological.lower()
 
-    speech1 = "Ах, " + player1.astrological + ", как интересно. Ну что ж.\n"
-    speech2 = "Кажется, здесь нам придется расстаться, " + player1.name + ".\n"
+    speech1 = f"Ах, {player1.astrological}, как интересно. Ну что ж.\n"
+    speech2 = f"Кажется, здесь нам придется расстаться, {player1.name}.\n"
     speech3 = "Как жаль.\n"
     speech4 = "О, вы не знаете, где вы? Хорошо...\n"
     speech5 = "К счастью, я оставил вас в небольшой головоломке. Надеюсь, вам удастся выбраться из этого ящика.\n"
